@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>C3 Maths Coursework</title>
+</head>
+<body>
+	<header>
+		<!-- <a href="#0" class="cd-logo"><img src="img/cd-logo.svg"></a>  commented out logo--> 
+		
+		<button class="cd-nav-trigger">Menu<span aria-hidden="true" class="cd-icon"></span></button>
+	</header>
+
+	<nav class="cd-primary-nav">
+		<!-- <ul>
+			<li class="cd-label">Navigation</li>
+			<li><a href="#0">The team</a></li>
+			<li><a href="#0">Our services</a></li>
+			<li><a href="#0">Our projects</a></li>
+			<li><a href="#0">Contact us</a></li>
+		</ul> -->
+	<dl> 
+		<dt class="cd-label">About</dt>
+		 <dd>
+			Dear viewer, here is a website based on my C3 maths Course work...
+			<p>
+				Here in my C3 coursework, I will be discussing the advantages and disadvantages of using different Numerical graph solutions. The three methods I will be using are:
+			 <ol>
+				<li>Decimal Search (type of systematic search)</li>
+				<li>Fixed point iteration using Newton-Raphson method</li>
+				<li>Fixed point iteration after rearranging the equation f(x)=0 into the form x=g(x)</li>
+			 </ol>
+			</p>
+		 </dd>
+		 
+	</dl>
+	
+	</nav> <!-- .cd-primary-nav -->
+	<div class="cd-projects-container">
+		<ul>
+			<li class="single-project">
+				<div class="cd-title">
+					<h2>Decimal Search Method</h2>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<button class="cd-scroll">Scroll down</button>
+					
+					<div class="content-wrapper">
+						<p>
+							What is decimal search?
+						</p>
+
+						<p>
+							In decimal search, we look for a change in sign in the ‘y’ value of the function. When we find this change in the sign (for example the root lies between ‘x’ values 1 and 2), we go to the next decimal place and divide the intervals into 10 ‘x’ values, i.e.: the list will look like 1.0, 1.1, 1.2, …, 2.0. Again, you find the sign changes, in the ‘y’ values and subdivide that specific ‘x’ interval again into 10 intervals. Do this until you have ‘x’ values which are in 4 significant figures to have a good degree of accuracy.
+						</p>
+
+						<p>
+							...
+						</p>
+					</div>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li class="single-project">
+				<div class="cd-title">
+					<h2>Fixed Point Iteration, Newton-Raphson Method</h2>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<button class="cd-scroll">Scroll down</button>
+
+					<div class="content-wrapper">
+						<p>
+							Newton- Raphson numerical solution...
+						</p>
+
+						<p>
+							If we have a function ‘f(x)’ which has real roots near an integer, you have to choose that integer for the ‘x0’ value. At this value of ‘x’, we have to find the ‘y’ value on our curve. At this point on the curve, we need to draw a tangent and find where that tangent intersects the x-axis. This ‘x’ value then becomes our ‘x1’ value. For this ‘x’ value, we do the same thing as we did to ‘x0’. The x-intersect of each of the tangents should get us closer and closer to the real root value near that integer.
+						</p>
+
+						<p>
+							To find the value of the next ‘x’ value, we can use the equation?  x_(n+1)= x_n-  (f(x_n))/(f'(x_n)) This equation can be used as an alternative to the tangent method on the graph. The ‘x’ value should converge to the real root quite quickly using this method.
+						</p>
+					</div>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li class="single-project">
+				<div class="cd-title">
+					<h2>Fixed Point Iteration, Rearrangement Method</h2>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<button class="cd-scroll">Scroll down</button>
+					
+					<div class="content-wrapper">
+						<p>
+							Fixed point iteration-Rearrangement method...
+						</p>
+
+						<p>
+							Rearrangement is my third and final method of numerical solution. In this method, once you come up with a function, you plot the graph for it on ‘Autograph’ programme. Then you also plot the line ‘y=x’. Next you plot function g(x) (which is the original function ‘f(x)’ but just rearranged). Once you have plotted these three lines, choose one real root of your original function. Check if the intersection of the rearranged function and line ‘y=x’ are either directly underneath or directly above this real root. If this is the case, then iterate an integer ‘x’ value (one which is near the root) to get closer and closer to the actual ‘x’ value of the real root you desire. You should find the ‘x’ value to a minimum of 5 significant figures of accuracy.
+						</p>
+
+						<p>
+							...
+						</p>
+					</div>
+				</div> <!-- .cd-project-info -->
+			</li>
+		</ul>
+	</div> <!-- .cd-projects-container -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
